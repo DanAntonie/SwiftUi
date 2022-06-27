@@ -21,7 +21,7 @@ struct EventsView: View {
     var body: some View {
        
         NavigationView {
-            VStack (alignment: .leading, spacing: 10){
+            VStack (alignment: .leading) {
                 
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                    let upcomingSelected = self.selected == .upcoming
@@ -59,10 +59,33 @@ struct EventsView: View {
 
                 }.padding(.leading, 23.0)
                 
-                Spacer()
-                List {
-                    
-                }.background(Color.white)
+                let filtered = searchText.isEmpty ? events : events.filter({ event in
+                    return event.name.contains(searchText)
+                })
+                
+                if searchText.isEmpty {
+                    Spacer(minLength: 16)
+                    Text("UPCOMING")
+                        .font(.system(size: 11))
+                        .foregroundColor(.gray)
+                        .padding(.leading, 23.0)
+                    EventListElement(event: events[0], hasImage: true)
+                }
+                Spacer(minLength: 16)
+                Text("UPCOMING NEXT")
+                    .font(.system(size: 11))
+                    .foregroundColor(.gray)
+                    .padding(.leading, 23)
+                
+                List(filtered, id: \.id) { event in
+                    NavigationLink {
+                        
+                    } label : {
+                       EventListElement(event: event)
+                    }
+                }
+                .listStyle(PlainListStyle())
+                
             }.navigationTitle("Events")
                 .searchable(text: $searchText)
         }

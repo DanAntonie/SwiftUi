@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3724C7372869D561002C1179 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C7362869D561002C1179 /* ModelData.swift */; };
+		3724C7392869D7BE002C1179 /* EventListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C7382869D7BE002C1179 /* EventListElement.swift */; };
 		3785620328647FD6008B4BC5 /* SwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785620228647FD6008B4BC5 /* SwiftUIAppApp.swift */; };
 		3785620528647FD6008B4BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785620428647FD6008B4BC5 /* ContentView.swift */; };
 		3785620728647FD7008B4BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3785620628647FD7008B4BC5 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3724C7362869D561002C1179 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3724C7382869D7BE002C1179 /* EventListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListElement.swift; sourceTree = "<group>"; };
 		378561FF28647FD6008B4BC5 /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3785620228647FD6008B4BC5 /* SwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAppApp.swift; sourceTree = "<group>"; };
 		3785620428647FD6008B4BC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,8 +68,9 @@
 				3785620428647FD6008B4BC5 /* ContentView.swift */,
 				3785620628647FD7008B4BC5 /* Assets.xcassets */,
 				37856210286493C2008B4BC5 /* CircleImage.swift */,
-				3785620828647FD7008B4BC5 /* Preview Content */,
 				378562122865A4CB008B4BC5 /* EventsView.swift */,
+				3785620828647FD7008B4BC5 /* Preview Content */,
+				3724C7382869D7BE002C1179 /* EventListElement.swift */,
 			);
 			path = SwiftUIApp;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 		378562162865F75A008B4BC5 /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				3724C7362869D561002C1179 /* ModelData.swift */,
 				378562172865F766008B4BC5 /* landmarkData.json */,
 				378562142865F220008B4BC5 /* Event.swift */,
 			);
@@ -162,7 +168,9 @@
 				3785620528647FD6008B4BC5 /* ContentView.swift in Sources */,
 				3785620328647FD6008B4BC5 /* SwiftUIAppApp.swift in Sources */,
 				37856211286493C2008B4BC5 /* CircleImage.swift in Sources */,
+				3724C7392869D7BE002C1179 /* EventListElement.swift in Sources */,
 				378562152865F220008B4BC5 /* Event.swift in Sources */,
+				3724C7372869D561002C1179 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
